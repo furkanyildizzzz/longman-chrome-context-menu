@@ -1,0 +1,21 @@
+{
+   "description": "Add a context menu item to search for selected text at Longman Dictionary.",
+   "icons": {
+      "16": "longman-logo-16.png",
+      "48": "longman-logo-48.png",
+      "128": "longman-logo-128.png"
+   },
+   "minimum_chrome_version": "6",
+   "manifest_version": 3,
+   "name": "Longman Dictionary Right Click",
+   "permissions": [ "contextMenus", "tabs", "storage" ],
+   "version": "1.0",
+   "action": {
+    "default_popup": "popup.html",
+    "default_icon" : "longman-logo-16.png"
+  },
+  "background": {
+    "service_worker": "popup.js",
+    "type": "module"
+  }
+}
